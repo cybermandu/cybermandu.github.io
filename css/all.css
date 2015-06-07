@@ -26,7 +26,7 @@ body {
   text-shadow: none;
 }
 
-::-webkit-scrollbar{width:15px}
+::-webkit-scrollbar{width:10px}
 ::-webkit-scrollbar-track{background:#FFF}
 ::-webkit-scrollbar-thumb{background:#28292e}
 
@@ -64,8 +64,6 @@ header {
   padding: 50px 0 0 0;
   height: 100vh;
   text-align: center;
- /* z-index:1;*/
-  position: relative;
 }
 
 header h1 {
@@ -684,6 +682,9 @@ ul.simplePagerNav li.currentPage a {
 }
 
 @media all and (max-width: 767px){
+  header  {
+    height: 100%;
+  }
   nav {
     position:relative;
     z-index: 2;
@@ -701,40 +702,38 @@ ul.simplePagerNav li.currentPage a {
   }
   nav ul li {
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     margin-right: 15px;
     transition: all 0.5s ease-in-out;
+    padding: 5px;
   }
 
   nav ul li:after {
     content: '';
     display: inline-block;
     position: absolute;
-    background: #aaa;
-    width: 5px;
-    height: 5px;
-    margin-left: -50px;
+    background: transparent;
+    width: 0;
+    height: 0;
+    margin-left: 0;
     transition: all 0.5s ease-in-out;
-  }
-
-  nav ul li:hover:after  {
-    width: 50px;
-    background-color: #eee;
   }
 
   nav ul li.active:after {
     content: '';
     display: inline-block;
-    background: #eee;
-    width: 5px;
-    height: 15px;
-    margin-left: 10px;
+    background: transparent;
+    width: 0;
+    height: 0;
+    margin-left: 0;
   }
 
   nav ul li a {
     color: #aaa;
     padding: 10px 0;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
   }
 
   nav ul li a:hover, nav ul li a:focus {
@@ -754,11 +753,25 @@ ul.simplePagerNav li.currentPage a {
     position: relative;
   }
 
+  .profile-img {
+    margin: 15px 0;
+  }
+
+  .md-down {
+    display: none;
+  }
+
 }
 
 @media all and (max-width: 479px) {
   #portfolio ul li {
     display:inline-block;width:100%;margin:0;padding:15px;text-align:left;position:relative;
+  }
+  nav ul li {
+    font-size: 12px;
+    text-align: left;
+    margin-right: 0;
+    padding: 5px;
   }
 }
 
