@@ -30,6 +30,14 @@ body {
 ::-webkit-scrollbar-track{background:#FFF}
 ::-webkit-scrollbar-thumb{background:#28292e}
 
+a {
+  color: #aaa;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .margin {
   margin-top:15px;
 }
@@ -53,7 +61,7 @@ img:hover {
   font-family: 'Raleway', sans-serif;
   color: #eee;
   text-align: center;
-  font-size: 24px;
+  font-size: 2em;
   text-transform: uppercase;
 }
 .logo span {
@@ -76,7 +84,7 @@ header h1 span {
 }
 header h2 {
   color: #ccc;
-  font-size: 24px;
+  font-size: 1.5rem;
   max-width: 768px;
   margin: 0 auto;
 }
@@ -112,7 +120,7 @@ header h2 {
 }
 
 .md-down {
-  font-size: 32px;
+  font-size: 3rem;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -143,7 +151,7 @@ nav ul {
 }
 nav ul li {
   display: list-item;
-  font-size: 10px;
+  font-size: 1rem;
   text-align: right;
   transition: all 0.5s ease-in-out;
 }
@@ -192,7 +200,7 @@ nav ul li.active a {
 .social a {
   color: #aaa;
   margin-right: 15px;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .social a:last-child {
@@ -216,16 +224,18 @@ nav ul li.active a {
 .md-btn a:hover::before,
 .md-btn a:focus::before{-webkit-transform:translateX(0%);-moz-transform:translateX(0%);transform:translateX(0%);}
 
+#about .md-btn a {font-size: 1em;}
+
 #about, #portfolio, #skill, #contact {
   padding: 50px 0;
   z-index: 1;
   position: relative;
 }
 
-#about, #skill {
+#about, #skill, #contact {
   height: 100vh;
 }
-#portfolio, #contact {
+#portfolio {
   height: 100%;
 }
 
@@ -238,7 +248,7 @@ nav ul li.active a {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 #about h1:after, #portfolio h1:after, #skill h1:after, #contact h1:after {
@@ -252,18 +262,18 @@ nav ul li.active a {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 #contact h2 {
-  font-size: 18px;
+  font-size: 1.8rem;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
 
 address {
-  font-size: 14px;
+  font-size: 1.4rem;
   z-index: 1;
   position: relative;
 }
@@ -437,9 +447,9 @@ address a:hover {
   position:absolute;
   top:0;
   left:0;
-width:110px;
+  width:110px;
   font-weight:bold;
-  font-size:13px;
+  font-size:1.3rem;
   color:#ffffff;
   background:#6adcfa;
   -webkit-border-top-left-radius:3px;
@@ -477,7 +487,7 @@ width:110px;
   position:absolute;
   right:10px;
   top:0;
-  font-size:11px;
+  font-size:1.1rem;
   height:30px;
   line-height:30px;
   color:#ffffff;
@@ -498,7 +508,7 @@ width:110px;
 #portfolio figure:hover figcaption{opacity:1;-webkit-transform:translateY(0px);-moz-transform:translateY(0px);-ms-transform:translateY(0px);transform:translateY(0px);-webkit-transition:-webkit-transform 0.4s, opacity 0.1s;-moz-transition:-moz-transform 0.4s, opacity 0.1s;transition:transform 0.4s, opacity 0.1s;}
 #portfolio figcaption a{position:absolute;bottom:80px;right:20px;text-align:center;padding:5px 10px;border-radius:2px;display:inline-block;background:#222;color:#fff;}
 #portfolio figcaption a:hover {background: #111;text-decoration: none;}
-#portfolio figcaption h3{margin:0;padding:0;color:#fff;font-size: 18px;}
+#portfolio figcaption h3{margin:0;padding:0;color:#fff;font-size: 1.8rem;}
 
 
 #totop {
@@ -537,7 +547,7 @@ ul.simplePagerNav {
 ul.simplePagerNav li{
   display:inline-block;
   margin-bottom: 10px;
-  font-size:14px;
+  font-size:1.4rem;
   width: 30px!important;
 }
 
@@ -546,10 +556,6 @@ ul.simplePagerNav li a{
   text-decoration: none;
   background: #222;
   padding: 10px;
-}
-
-ul.simplePagerNav li.currentPage {
-
 }
 
 ul.simplePagerNav li.currentPage a {
@@ -579,14 +585,14 @@ ul.simplePagerNav li.currentPage a {
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .md-form input,
 .md-form textarea,
 .md-form select {
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 1.4rem;
   padding: 5px 10px;
   color: #fff;
   display: block;
@@ -682,9 +688,7 @@ ul.simplePagerNav li.currentPage a {
 }
 
 @media all and (max-width: 767px){
-  header  {
-    height: 100%;
-  }
+
   nav {
     position:relative;
     z-index: 2;
@@ -702,7 +706,7 @@ ul.simplePagerNav li.currentPage a {
   }
   nav ul li {
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-align: left;
     margin-right: 15px;
     transition: all 0.5s ease-in-out;
@@ -768,7 +772,7 @@ ul.simplePagerNav li.currentPage a {
     display:inline-block;width:100%;margin:0;padding:15px;text-align:left;position:relative;
   }
   nav ul li {
-    font-size: 12px;
+    font-size: 1.2rem;
     text-align: left;
     margin-right: 0;
     padding: 5px;
